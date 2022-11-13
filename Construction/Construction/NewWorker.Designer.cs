@@ -47,7 +47,7 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::Construction.Properties.Resources.back;
+            this.button3.BackgroundImage = global::Construction.Properties.Resources.back1;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(142, 27);
             this.button3.Name = "button3";
@@ -70,7 +70,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FloralWhite;
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(231, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 46);
@@ -155,24 +155,26 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(438, 384);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 42);
             this.button1.TabIndex = 27;
             this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(594, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 42);
             this.button2.TabIndex = 28;
             this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // NewWorker
@@ -194,6 +196,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewWorker";
             this.Text = "Aic Engineering";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

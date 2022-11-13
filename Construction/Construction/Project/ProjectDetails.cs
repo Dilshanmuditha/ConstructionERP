@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Construction.Expenses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,57 +10,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Construction
+namespace Construction.Project
 {
-    public partial class WorkerDetails : Form
+    public partial class ProjectDetails : Form
     {
-        public WorkerDetails()
+        public ProjectDetails()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Workers worker = new Workers();
-            worker.Show();
-            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string Constring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\AIC System Software\constructionDB.mdf"";Integrated Security=True;Connect Timeout=30";
-            string Query = "SELECT * FROM workerDetails";
+            string Query = "SELECT * FROM Project";
 
-            SqlDataAdapter adapter = new SqlDataAdapter(Query,Constring);
+            SqlDataAdapter adapter = new SqlDataAdapter(Query, Constring);
             DataSet ds = new DataSet();
 
-            adapter.Fill(ds, "workerDetails");
-            dataGridView1.DataSource = ds.Tables["workerDetails"];
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            int id = int.Parse(textBox1.Text);
-            string Constring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\AIC System Software\constructionDB.mdf"";Integrated Security=True;Connect Timeout=30";
-            string Query = "SELECT * FROM workerDetails WHERE Id='" + id + "'";
-            try {
-                SqlDataAdapter adapter = new SqlDataAdapter(Query, Constring);
-                DataSet ds = new DataSet();
-
-                adapter.Fill(ds, "workerDetails");
-                dataGridView1.DataSource = ds.Tables["workerDetails"];
-            }
-            catch (SqlException se)
-            {
-                MessageBox.Show("" + se);
-            }
-
-
+            adapter.Fill(ds, "Project");
+            dataGridView1.DataSource = ds.Tables["Project"];
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Project.Projects projects = new Project.Projects();
+            projects.Show();
+            this.Close();
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -79,20 +60,20 @@ namespace Construction
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             int id = int.Parse(textBox1.Text);
 
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\AIC System Software\constructionDB.mdf"";Integrated Security=True;Connect Timeout=30");
 
-            string delete = "DELETE FROM workerDetails Where Id='" + id + "'";
+            string delete = "DELETE FROM Project Where Id='" + id + "'";
             SqlCommand cmd = new SqlCommand(delete, con);
             try
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Records Deleted.");
-            
+
             }
             catch (SqlException se)
             {
@@ -100,13 +81,54 @@ namespace Construction
             }
         }
 
-        private void WorkerDetails_Load(object sender, EventArgs e)
+        public static string sendtext = "";
+
+        private void button4_Click(object sender, EventArgs e)
         {
 
+            string NIC = textBox1.Text;
+            if (NIC == "")
+            {
+                label3.Text = "please enter id number";
+            }
+            else
+            {
+                int id = int.Parse(textBox1.Text);
+
+                SqlConnection Constring = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\AIC System Software\constructionDB.mdf"";Integrated Security=True;Connect Timeout=30");
+                string Query = "Select * From Project Where Id='" + id + "'";
+
+                SqlCommand cmd = new SqlCommand(Query, Constring);
+
+                try
+                {
+                    Constring.Open();
+                    SqlDataReader sdr = cmd.ExecuteReader();
+
+                    if (sdr.Read())
+                    {
+                        sendtext = textBox1.Text;
+                        UpdateProject update = new UpdateProject();
+                        update.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        label2.Text = "*Not a Valid Id Number";
+                        label2.ForeColor = Color.DarkOrange;
+                    }
+                }
+                catch (SqlException se)
+                {
+                    MessageBox.Show("" + se);
+                }
+
+            }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
+
             DataObject copydata = dataGridView1.GetClipboardContent();
             if (copydata != null) Clipboard.SetDataObject(copydata);
             Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();

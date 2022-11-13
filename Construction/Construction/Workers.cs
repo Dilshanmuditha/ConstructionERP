@@ -165,7 +165,7 @@ namespace Construction
             double Expenses = double.Parse(textBoxExpenses.Text);
             DateTime date = DateTime.Today;
             DateTime time = DateTime.Now;
-
+            
 
             double OtPay = (PayPerDay / 8) * OtHours;
             double Salary = (PayPerDay * WorkDays) + OtPay + Allowance - Expenses;

@@ -19,3 +19,10 @@ C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construct
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.UpdateWorkers.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.SalarySheet.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.csproj.ResolveComReference.cache
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Expenses.Expenses.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Project.Projects.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Project.ProjectDetails.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Expenses.ExpensesDetails.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Expenses.UpdateExpenses.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Project.UpdateProject.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Equipment.Equipment.resources

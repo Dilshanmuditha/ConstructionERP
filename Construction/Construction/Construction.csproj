@@ -86,6 +86,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Expenses\Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses\Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expenses\ExpensesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses\ExpensesDetails.Designer.cs">
+      <DependentUpon>ExpensesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Expenses\UpdateExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses\UpdateExpenses.Designer.cs">
+      <DependentUpon>UpdateExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,24 @@
       <DependentUpon>NewWorker.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Project\ProjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\ProjectDetails.Designer.cs">
+      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\Projects.Designer.cs">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\UpdateProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\UpdateProject.Designer.cs">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalarySheet.cs">
       <SubType>Form</SubType>
@@ -130,6 +166,15 @@
     <Compile Include="Workers.Designer.cs">
       <DependentUpon>Workers.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Expenses\Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses\ExpensesDetails.resx">
+      <DependentUpon>ExpensesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses\UpdateExpenses.resx">
+      <DependentUpon>UpdateExpenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +183,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewWorker.resx">
       <DependentUpon>NewWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProjectDetails.resx">
+      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\Projects.resx">
+      <DependentUpon>Projects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\UpdateProject.resx">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,6 +262,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,5 +39,10 @@ namespace Construction
                 MessageBox.Show("Can not input null values");
             }
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
