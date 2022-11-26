@@ -10,9 +10,6 @@ C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construct
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.exe
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.pdb
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Home.resources
-C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.csproj.CopyComplete
-C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\bin\Debug\Bunifu.Licensing.dll
-C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.exe.config
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Workers.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.WorkerDetails.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.NewWorker.resources
@@ -25,4 +22,7 @@ C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construct
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Expenses.ExpensesDetails.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Expenses.UpdateExpenses.resources
 C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Project.UpdateProject.resources
-C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.Equipment.Equipment.resources
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\bin\Debug\Construction.exe.manifest
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\bin\Debug\Construction.application
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.exe.manifest
+C:\Users\L.D.M.Kumara\source\repos\Construction\Construction\obj\Debug\Construction.application

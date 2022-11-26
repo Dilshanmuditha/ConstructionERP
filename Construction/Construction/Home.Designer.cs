@@ -99,7 +99,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monospac821 BT", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.ForeColor = System.Drawing.Color.DarkKhaki;
             this.label1.Location = new System.Drawing.Point(74, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(695, 34);
